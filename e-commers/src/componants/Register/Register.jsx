@@ -99,11 +99,11 @@ export default function Register() {
         {formik.errors.phone && formik.touched.phone?<div className="alert mt-2 p-2 alert-danger">{formik.errors.phone}</div> : ""}
 
         <label htmlFor="password">password :</label>
-        <input value={formik.values.password} onBlur={formik.handleBlur} onChange={formik.handleChange}  className='form-control mb-2' type="tel" id='password' name='password' />
+        <input value={formik.values.password} onBlur={formik.handleBlur} onChange={formik.handleChange}  className='form-control mb-2' type="text" id='password' name='password' />
         {formik.errors.password && formik.touched.password?<div className="alert mt-2 p-2 alert-danger">{formik.errors.password}</div> : ""}
 
         <label htmlFor="rePassword">rePassword :</label>
-        <input value={formik.values.rePassword} onBlur={formik.handleBlur} onChange={formik.handleChange}  className='form-control mb-2' type="tel" id='rePassword' name='rePassword' />
+        <input value={formik.values.rePassword} onBlur={formik.handleBlur} onChange={formik.handleChange}  className='form-control mb-2' type="text" id='rePassword' name='rePassword' />
         {formik.errors.rePassword && formik.touched.rePassword?<div className="alert mt-2 p-2 alert-danger">{formik.errors.rePassword}</div> : ""}
 
         {isLoading? < FallingLines

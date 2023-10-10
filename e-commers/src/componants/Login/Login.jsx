@@ -58,9 +58,9 @@ export default function Login() {
         <input value={formik.values.email} onBlur={formik.handleBlur} onChange={formik.handleChange}  className='form-control mb-2' type="email" id='email' name='email' />
         {formik.errors.email && formik.touched.email?<div className="alert mt-2 p-2 alert-danger">{formik.errors.email}</div> : ""}
 
-       
+
         <label htmlFor="password">password :</label>
-        <input value={formik.values.password} onBlur={formik.handleBlur} onChange={formik.handleChange}  className='form-control mb-2' type="tel" id='password' name='password' />
+        <input value={formik.values.password} onBlur={formik.handleBlur} onChange={formik.handleChange}  className='form-control mb-2' type="text" id='password' name='password' />
         {formik.errors.password && formik.touched.password?<div className="alert mt-2 p-2 alert-danger">{formik.errors.password}</div> : ""}
 
         {isLoading? <CirclesWithBar
