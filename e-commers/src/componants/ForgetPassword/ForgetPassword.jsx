@@ -12,9 +12,10 @@ export default function ForgetPassword() {
     })
     .then((res)=>res)
     .catch((err)=>err)
-  console.log(response.data.statusMsg);
+  console.log(response.response.data.statusMsg
+    );
   
-  if(response.data.statusMsg === 'success'){
+  if(response.response.data.statusMsg === 'success'){
     navigate('/verifycode')
   }
   } 
