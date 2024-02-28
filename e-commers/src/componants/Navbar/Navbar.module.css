@@ -1,1 +1,19 @@
-.Navbar {}
+.logo{
+    color: rgb(119, 62, 184);
+    font-weight: 900;
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navhov:hover{
+    color: rgb(119, 62, 184) !important;
+    text-decoration: underline !important;
+    transition: .5s;
+}
+.sochover{
+    color: rgb(119, 62, 184) !important;
+    transition: .5s;
+}
+.logout{
+    color: rgb(119, 62, 184) !important;
+    font-weight: 800 !important;
+}
