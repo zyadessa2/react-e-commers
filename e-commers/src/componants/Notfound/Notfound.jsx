@@ -28,7 +28,6 @@ const Notfound = () => {
     }
   }
 
-
   let validateYup = Yup.object({
     email: Yup.string().email('email is invalid').required('email is requierd'),
     password:Yup.string().matches(/^[A-Z][a-z0-9]{5,10}$/ ,'password start with uppercase').required('password is requierd'),
