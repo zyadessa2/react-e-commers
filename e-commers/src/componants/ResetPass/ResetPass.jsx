@@ -17,10 +17,18 @@ export default function ResetPass() {
       })
       .then((res)=>res)
       .catch((err)=>err)
-    console.log(response.data.token);
-    localStorage.setItem('userToken' , response.data.token)
-    setUserToken(response.data.token)
-    navigate('/') 
+
+      console.log(response);
+      // if(response.response.data.statusMsg == "fail"){
+      //   alert(response.response.data.message)
+      // }
+        localStorage.setItem('userToken' , response.data.token)
+        setUserToken(response.data.token)
+        navigate('/') 
+    
+    // localStorage.setItem('userToken' , response.data.token)
+    // setUserToken(response.data.token)
+    // navigate('/') 
   } 
 
   return <>

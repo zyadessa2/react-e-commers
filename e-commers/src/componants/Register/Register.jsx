@@ -25,13 +25,13 @@ export default function Register() {
       navigate('/login') 
     }
   }
-
+  const phoneRegExp = /^(01)[0-9]{9}$/;
 
   let validateYup = Yup.object({
     name:Yup.string().min(3 , 'name minlength is 3').max(10 , 'name maxlength is 10').required('name is requierd'),
     email: Yup.string().email('email is invalid').required('email is requierd'),
-    phone: Yup.string().matches().required('phone is reuired'),
-    password:Yup.string().matches(/^[A-Z][a-z0-9]{5,10}$/ ,'password start with uppercase').required('password is requierd'),
+    phone: Yup.string().matches(phoneRegExp, 'يجب إدخال رقم هاتف مصري صحيح').required('phone is reuired'),
+    password:Yup.string().required('password is requierd'),
     rePassword:Yup.string().oneOf([Yup.ref("password")], 'password and repassword dont match').required('rePassword is requierd')
   })
 

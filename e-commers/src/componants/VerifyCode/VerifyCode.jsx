@@ -13,12 +13,17 @@ export default function VerifyCode() {
     })
     .then((res)=>res)
     .catch((err)=>err)
+    console.log(response);
     
-    if(response.data.status === 'Success'){
-      navigate('/resetpassword')
-    }else{
-      alert('incorrect code')
-    }
+      if(response.data.status === 'Success'){
+        navigate('/resetpassword')
+      }else{
+        // if(response.response.data.statusMsg == "fail"){
+        //   alert(response.response.data.message)
+        // }
+        alert('incorrect code')
+      }
+      
   }
 
   return <>
