@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/react-e-commers/static/css/main.325c1d29.css",
-    "main.js": "/react-e-commers/static/js/main.3b3bfdcb.js",
+    "main.css": "/react-e-commers/static/css/main.ec44acdd.css",
+    "main.js": "/react-e-commers/static/js/main.3a26872d.js",
+    "static/media/blog-img-2.jpeg": "/react-e-commers/static/media/blog-img-2.69e5e73301d9616ba8c6.jpeg",
+    "static/media/blog-img-1.jpeg": "/react-e-commers/static/media/blog-img-1.3e2f37267e1d1d5c8c75.jpeg",
     "static/media/fa-solid-900.ttf": "/react-e-commers/static/media/fa-solid-900.d75e3fd1eb12e9bd6655.ttf",
     "static/media/slider-image-1.jpeg": "/react-e-commers/static/media/slider-image-1.3c3940ee0f1c3b17ff9a.jpeg",
     "static/media/fa-brands-400.ttf": "/react-e-commers/static/media/fa-brands-400.016b4a6cdced82ab3aa1.ttf",
@@ -19,11 +21,11 @@
     "static/media/slick.ttf": "/react-e-commers/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/react-e-commers/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/react-e-commers/index.html",
-    "main.325c1d29.css.map": "/react-e-commers/static/css/main.325c1d29.css.map",
-    "main.3b3bfdcb.js.map": "/react-e-commers/static/js/main.3b3bfdcb.js.map"
+    "main.ec44acdd.css.map": "/react-e-commers/static/css/main.ec44acdd.css.map",
+    "main.3a26872d.js.map": "/react-e-commers/static/js/main.3a26872d.js.map"
   },
   "entrypoints": [
-    "static/css/main.325c1d29.css",
-    "static/js/main.3b3bfdcb.js"
+    "static/css/main.ec44acdd.css",
+    "static/js/main.3a26872d.js"
   ]
 }
