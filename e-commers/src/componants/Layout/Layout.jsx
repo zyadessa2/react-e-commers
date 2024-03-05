@@ -16,11 +16,10 @@ export default function Layout() {
   },[])
 
 
-
   return <>
 
   <Navbar/>
-    <div className="container">
+    <div className="container mt-5 pt-5 mb-4">
       <Outlet></Outlet>
     </div>
   <Footer/>

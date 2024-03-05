@@ -18,7 +18,7 @@ function Logout(){
 
 
   return <>
-  <nav className="navbar navbar-expand-lg bg-body-tertiary">
+  <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid ">
     <Link className="navbar-brand" to='/'>
       <h2 className={` ${style.logo}`}>Guzel</h2>
@@ -57,8 +57,8 @@ function Logout(){
       <ul className="navbar-nav ms-auto">
       <li className={`nav-item d-flex fs-4 ${style.sochover} align-items-center`}>
         <a className={style.sochover} href="https://www.facebook.com/zezo.helmy.52012/" target='_blank'><i className='fab fa-facebook mx-2'></i></a>
-          <a className={style.sochover} href="https://github.com/zyadessa2"><i className='fab fa-github mx-2'></i></a>
-          <a className={style.sochover} href="https://www.instagram.com/zyad.helmy/"><i className='fab fa-instagram mx-2'></i></a>
+          <a className={style.sochover} href="https://github.com/zyadessa2" target='_blank'><i className='fab fa-github mx-2'></i></a>
+          <a className={style.sochover} href="https://www.instagram.com/zyad.helmy/" target='_blank'><i className='fab fa-instagram mx-2'></i></a>
         </li>
         {userToken !== null ? <>
           <li className="nav-item">

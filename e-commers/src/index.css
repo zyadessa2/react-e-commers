@@ -1,8 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+.main-title{
+    margin: 0 auto 80px;
+    border: 3px solid black;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+    transition: var(--main-transition);
+  }
+  .main-title::before,
+  .main-title::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .main-title::before{
+    left: -30px;
+  }
+  .main-title::after{
+    right: -30px;
+  }
+  .main-title:hover::before{
+    z-index: -1;
+    animation: left-move 0.5s linear forwards;
+  }
+  .main-title:hover::after{
+    z-index: -1;
+    animation: right-move 0.5s linear forwards;
+  }
+  .main-title:hover{
+    color: white;
+    border: 2px solid white;
+    transition-delay: 0.5s;
+  }
+
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
 :root
 {
-    --main-color:#0aad0a;
+    --main-color:rgb(119, 62, 184);
     --light-color:#f0f3f2;
     --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
     --font-family:'Encode Sans Expanded', sans-serif;
@@ -14,7 +55,7 @@ body{
 }
 .rating-color
 {
-    color: var(--rating-color);
+    color: var(--rating-color) !important;
 }
 .cursor-pointer
 {
@@ -68,3 +109,41 @@ a , a:hover{
     padding: 10px;
     
 }
+.ratingColor{
+    color: yellow !important;
+    margin-top: 5px;
+  }
+  .bg-red{
+    color: red;
+  }
+  .main-col{
+    color :rgb(119, 62, 184);
+    width: fit-content;
+  }
+
+  @keyframes left-move{
+    50%{
+      left: 0;
+      width: 12px;
+      height: 12px;
+    }
+    100%{
+      left: 0;
+      border-radius: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @keyframes right-move{
+    50%{
+      right: 0;
+      width: 12px;
+      height: 12px;
+    }
+    100%{
+      right: 0;
+      border-radius: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }

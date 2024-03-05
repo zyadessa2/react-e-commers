@@ -28,7 +28,10 @@ export default function Brands() {
     ariaLabel='circles-with-bar-loading'
   /> 
   </div>:<div className='row g-4 mt-5'>
-    <h3 className='text-main pb-4 fw-bolder text-center'>All Brands</h3>
+    <div className='w-100'>
+    <h2 class="main-title ">All Brands</h2>
+    </div>
+    {/* <h3 className='text-main pb-4 fw-bolder text-center'>All Brands</h3> */}
     {data?.data.data.map((product)=>(
       <div className="col-md-3 text-center p-5 bg-light border">
         <h2 className='fw-bolder fs-1 '>{product.name}</h2>

@@ -47,14 +47,14 @@ export default function Cart() {
   /> 
   </div>:<div className=" mt-5 bg-main-light p-4">
             {loading?<div>
-              <h2>Shop Cart</h2>
+              <h2 className='main-title '>Shop Cart</h2>
               <h2>Your cart is empty</h2>
             </div>:<div>
-                <h2>Shop Cart</h2>
-                <h2 className='h6 text-main '>TotalPrice : {cartitems.data.totalCartPrice}</h2>
-                <h2 className='h6 text-main '>TotalCart Items : {cartitems.numOfCartItems}</h2>
+                <h2 className='mb-4 main-title '>Shop Cart</h2>
+                <h2 className='h5 text-main '>TotalPrice : {cartitems.data.totalCartPrice}</h2>
+                <h2 className='h5 text-main '>TotalCart Items : {cartitems.numOfCartItems}</h2>
                   {cartitems.data.products.map((product)=>
-                    <div className='row py-3'>
+                    <div className='row py-3 justify-content-between'>
                       <div className="col-md-3">
                         <img src={product.product.imageCover} className='w-100' alt="" />
                       </div>
@@ -72,7 +72,7 @@ export default function Cart() {
                       </div>
                     </div>
                   )}
-                <Link to={'/address'} className='btn p-2 btn-primary m-3 w-25 text-white'>Check Out</Link >
+                <Link to={'/address'} className='btn p-2 bg-main fw-bold m-3 w-25 text-white'>Check Out</Link >
               </div>
             }
     </div>}

@@ -24,7 +24,9 @@ export default function CategorySlider() {
 console.log(data?.data.data);
 
   return <>
-  <h2 className='h4'>shop popular Category</h2>
+  
+  <h2 className='h4 m-auto fw-bold main-col'>shop popular Category</h2>
+ 
   <div className='my-2'>
 
       <Slider {...settings}>
